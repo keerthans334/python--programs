@@ -1,0 +1,30 @@
+print("welcome to the roller coaster ride")
+height=float(input("enter your height:"))
+bill=0
+if height>=6:
+    print("you are eligible for the ride")
+    age=int(input("enter your age:"))
+    if age<=12:
+        print("pay $5 for the ride.")
+        bill+=5
+    elif age<=18:
+        print("pay $7 for the ride.")
+        bill+=7
+    elif age>=44 and age<=55 :
+        print("take a free ride on us.")
+    else :   
+        print("pay $12 for your ride.")
+        bill+=12
+    ph=input("do you wnat photo (yes or no) ?. :").lower()
+      
+    if ph=='yes':
+        print("pay $5 for your photo")
+        bill+=5
+        print(f"total bill for your ride is=",bill)
+else:
+            print("your height is not sufficient to take a roller coaster  ride")
+            
+        
+        
+        
+    
