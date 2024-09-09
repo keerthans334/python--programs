@@ -27,6 +27,8 @@ elif(size=="l"):
         if extra_cheese=="y":
             bill+=1
 print(f"total bill of your pizza is=${bill}")
+
+#string slice function
 name='blackchair'
 #pull out letter r from the string without using the index
 print(name[len(name)-1])
