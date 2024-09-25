@@ -60,3 +60,14 @@ for i in lis:
         counter+=1
 print(counter)
 
+Note :
+string="hellow"
+print(string[5:])
+#when you attempt to slice beyond the length
+# of string, it,dosent't return error'
+# it return empty
+a=[1,2,3,4,5]
+b=[11,22]
+#adding two list use extend instead of append
+a.extend(b)
+print(a)
