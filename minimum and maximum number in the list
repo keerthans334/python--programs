@@ -1,0 +1,35 @@
+# findmaximum  number inside list
+lis = [11,22,33,44,55]
+max_number=lis[0]
+start_index=0
+last_index=len(lis)-1
+while  start_index<=last_index :
+    if lis[start_index]>max_number:
+        max_number=lis[start_index]
+    start_index+=1
+print(max_number)
+lis=[11,22,33,44]
+max_number=0
+for num in lis:
+    if num>max_number:
+        max_number=num
+print(max_number)
+#find minimun number in  list
+lis=[11,22,33,44,2]
+min_num=lis[0]
+start_index=1
+last_index=len(lis)-1
+while start_index<=last_index:
+    if lis[start_index]<min_num:
+        min_num=lis[start_index]
+    start_index+=1
+print(min_num)
+#find minimum number usaing for
+lis1=[11,22,33,44,6]
+min_number=lis[0]
+start_index=1
+for mini in lis1:
+    if mini<min_number:
+        mini_number=mini
+print(mini)
+
