@@ -32,4 +32,31 @@ for mini in lis1:
     if mini<min_number:
         mini_number=mini
 print(mini)
+lis=[10,22,'hellow','yope','holla','bonjure','oohiyo']
+start_index=len(lis)-1
+last_index=0
+my_lis=[]
+while start_index>=last_index:
+    my_lis.append(lis[start_index])
+    start_index-=1
+for i in my_lis:
+    print(i)
+#reverse the list using for loop
+lis=[10,'yencha ullar','hellow','yope','holla','bonjure','oohiyo']
+print(lis[ : :-1])
+# remove duplicates from the lis
+lis=['oohiyo','bonjure',22,33,11,'namaskaram','shubodayaha','hollla','holla',11,22,33,'bonjure','yenchaullar']
+unique_lis=[]
+for num in lis:
+    if num not in unique_lis:
+        unique_lis.append(num)
+print(unique_lis)
+# print the number of occurances of String in list
+lis=['bonjure','ohiyoo','holla','vannakam','holla','holla',11,33,11,22,3,2,1,11,22,44,323,11,333,11,22,88,66,11,11]
+counter=0
+target=11
+for i in lis:
+    if i==target:
+        counter+=1
+print(counter)
 
