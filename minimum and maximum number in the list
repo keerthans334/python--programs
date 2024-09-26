@@ -66,6 +66,37 @@ print(string[5:])
 #when you attempt to slice beyond the length
 # of string, it,dosent't return error'
 # it return empty
+
+
+
+
+
+"""num=input("enter number: ").split()
+list_converted=list(map(int,num))
+max_number=list_converted[0]
+for num in list_converted:
+    if num>max_number:
+        max_number=num
+print(list_converted)
+print(max_number)
+num=input("enter number: ").split()
+list_converted=list(map(int,num))
+target=int(input("enter the target:"))
+counter=0;
+if target in list_converted:
+    for num in list_converted:
+        if num==target:
+            counter+=1
+    print(f"number {target} is repeated {counter} number of times")
+else :
+    print(" the arget element not found")
+my_lis=[['apple','orange'],['mango','pineapple']]
+print(my_lis[1][1])"""
+lis=[[1,2],[3,4],[5,6]]
+for outer_lis in lis:
+    for inner-lis in outer_list:
+        print(inner_list)
+    
 a=[1,2,3,4,5]
 b=[11,22]
 #adding two list use extend instead of append
