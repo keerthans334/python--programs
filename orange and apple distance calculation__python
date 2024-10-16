@@ -1,0 +1,30 @@
+
+startend=list(map(int,input("house start and end position: ").split()))
+start=startend[0]
+end=startend[1]
+apporaloc=list(map(int,input("apple and orange position: ").split()))
+apploc=apporaloc[0]
+oraloc=apporaloc[1]
+apporaco=list(map(int,input("apple and orange count: ").split()))
+appco=apporaco[0]
+oraco=apporaco[1]
+appfallpoints=list(map(int,input("apple falling points: ").split()))
+orafallpoints=list(map(int,input("orange falling points: ").split()))
+appdis=[]
+oradis=[]
+coapp=0
+coora=0
+for points in appfallpoints:
+    distance=points+apploc
+    appdis.append(distance)
+for points in orafallpoints:
+    distance=points+oraloc
+    oradis.append(distance)    
+for distance in appdis:
+    if distance>=start and distance<=end:
+        coapp+=1
+for distance in oradis:
+    if distance>=start and distance<=end:
+        coora+=1      
+print(coapp)
+print(coora)   
